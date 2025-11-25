@@ -4,7 +4,8 @@
     --maincolor: #eaeaea;
     --secondarycolor: #fff;
     --secondarytext: #4b5156;
-
+    --themeDotBorder: #24292e;
+    --prreviewbg: rgb(245, 249, 243, 0.8);
 }
 
 html, body {
@@ -23,7 +24,7 @@ p, li, span, label, input, textarea{
     font-family: "Roboto Mono", monospace;
     font-optical-sizing: auto;
     font-weight: 500;
-    font-style: medium;
+    font-style: normal;
 }
 
 a {
@@ -75,7 +76,6 @@ h6 { font-size: 16px;}
     
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 3em 30em;
     grid-template-areas:
         'nav-wrapper nav-wrapper'
         'left-column right-column'
@@ -140,12 +140,118 @@ h6 { font-size: 16px;}
     box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
 }
 
+
+
 .left-column{
     grid-area: left-column;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#profile_pic{
+    display: block;
+    margin: 0 auto;
+
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    border: 2px solid var(--bordercolor);
+}
+
+
+
+.theme-options-wrapper{
+	display: flex;
+	justify-content: center;
+}
+
+.theme-dot{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: black;
+
+    margin: 5px;
+
+    -webkit-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75); 
+    -moz-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
+    box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
+
+    cursor: pointer;
+    border: 2px solid var(--themeDotBorder);
+}
+
+#light-mode{
+	background-color: #fff;
+}
+
+#blue-mode{
+	background-color: #192734;
+}
+
+#green-mode{
+	background-color: #78866b;
+}
+
+#purple-mode{
+	background-color: #7E4C74;
 }
 
 .right-column{
     grid-area: right-column;
+    display: grid;
+    align-content: center;
+}
+
+#preview{
+    width: 300px;
+    border: 1.5px solid #17a2b8;
+    background-color: var(--prreviewbg);
+    padding: 15px;
+    position: relative;
+}
+
+.corner{
+    border-radius: 50%;
+    width: 7px;
+    height: 7px;
+    border: 1.5px solid #17a2b8;
+    background-color: #fff;
+
+}
+
+#corner-tl{
+	position: absolute;
+	top: -10px;
+	left: -10px;
+}
+
+#corner-tr{
+	position: absolute;
+	top: -10px;
+	right: -10px;
+}
+
+#corner-bl{
+	position: absolute;
+	bottom: -10px;
+	left: -10px;
+}
+
+#corner-br{
+	position: absolute;
+	bottom: -10px;
+	right: -10px;
+}
+
+.theme-dot:hover{
+    border-width: 5px;
+}
+
+#settings-note{
+    font-size: 12px;
+    font-style: italic;
+    text-align: center;
 }
 
 @media screen and (max-width: 1200px) {
