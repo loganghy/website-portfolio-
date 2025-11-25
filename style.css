@@ -1,0 +1,71 @@
+:root {
+    --mainText:black;
+    --bordercolor: #c1c1c1;
+    --maincolor: #eaeaea;
+    --secondarycolor: #fff;
+    --secondarytext: #4b5156;
+
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, strong{
+    color: var(--mainText);
+    font-family: "Russo One", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+p, li, span, label, input, textarea{
+    color: var(--mainText);
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: medium;
+}
+
+a {
+    color: #17a2b8;
+    text-decoration: none;
+}
+
+h1 { font-size: 56px;}
+h2 { font-size: 36px;}
+h3 { font-size: 28px;}
+h4 { font-size: 24px;}
+h5 { font-size: 20px;}
+h6 { font-size: 16px;}
+
+
+.s1 {
+    background-color: var(--maincolor);
+    border-bottom: var(--bordercolor);
+    overflow: auto;
+}
+
+.s2 {
+    background-color: var(--secondarycolor);
+    border-bottom: var(--bordercolor);
+    overflow: auto;
+}
+
+.main-container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.greeting-wrapper {
+    display: grid;
+    border: 2px dashed lightcoral;
+    min-height: 10em;
+    text-align: center;
+    align-content: center;
+}
+
+@media screen and (max-width: 1200px) {
+    .main-container {
+        width: 100%;
+    }
+}
