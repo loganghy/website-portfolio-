@@ -3,13 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Logan's website</title>
+    <title>Logan's portfolio</title>
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+
+    <!-- My CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -29,7 +31,7 @@
                     </div>
 
                     <ul id="navigation">
-                        <li><a href="#">contact</a></li>
+                        <li><a href="#contact-form">contact</a></li>
                     </ul>
                 </div>
 
@@ -65,120 +67,136 @@
 
     </section>
 
- <section class="s2">
-        <div class="main-container">
-            <div class="about-wrapper">
-				<div class="about-me">
-					<h4>More about me</h4>
+    <section class="s2">
+            <div class="main-container">
+                <div class="about-wrapper">
+                    <div class="about-me">
+                        <h4>More about me</h4>
 
-					<p>I build new projects just to tickle my brain and love teaching others how they're made.</p>
+                        <p>I build new projects just to tickle my brain and love teaching others how they're made.</p>
 
-					<p>While I keep busy teaching courses, I still take interviews in search of a great team & projects that interest me.</p>
+                        <p>While I keep busy teaching courses, I still take interviews in search of a great team & projects that interest me.</p>
 
-					<hr>
+                        <hr>
 
-					<h4>TOP EXPERTISE</h4>
+                        <h4>TOP EXPERTISE</h4>
 
-					<p>Fullstack developer with primary focus on Django + React: <a target="_blank" href="resume.pdf">Download Resume</a></p>
+                        <p>Fullstack developer with primary focus on Django + React: 
+                            <div class="btn-container">
+                                <a download href="https://resume.pdf">Download Resume</a>
+                                <a target="_blank" href="resume.pdf">View Resume</a>
+                            </div>
+                        </p>
 
-					<div id="skills">
-						<ul>
-							<li>Python</li>
-							<li>SASS</li>
-							<li>JavaScript</li>
-							<li>React</li>
-							<li>Bootstrap</li>
-						</ul>
+                        <div id="skills">
+                            <ul>
+                                <li>Python</li>
+                                <li>SASS</li>
+                                <li>JavaScript</li>
+                                <li>React</li>
+                                <li>Bootstrap</li>
+                            </ul>
 
-						<ul>
-							<li>Google Maps API</li>
-							<li>Spotify Api</li>
-							<li>Github</li>
-							<li>HTML/CSS</li>
-						</ul>
+                            <ul>
+                                <li>Google Maps API</li>
+                                <li>Spotify Api</li>
+                                <li>Github</li>
+                                <li>HTML/CSS</li>
+                            </ul>
 
-					</div>
+                        </div>
 
-				</div>
-
-				<div class="social-links">
-					<img id="social_image" src="images/follow.jpg">
-					<h3>Find me on Twitter and Youtube</h3>
-				</div>
-			</div>
-        </div>
- </section>
-
-<section class="s1">
-        <div class="main-container">
-            <h3 style="text-align: center;">Some of my past projects</h3>
-            
-            <div class="post-wrapper">
-                
-                <div class="post">
-                    <img class="thumbnail" src="images/dash.jpg">
-                    <div class="post-preview">
-                        <h6 class ="post-title">Laboratory Managment System</h6>
-                        <p class ="post-intro">Designed built & mantained at the lab managment System for 
-                        Foi Labatories </p>
-                        <a href="loganghy.github.io/starbucks-website/">Read More</a>
                     </div>
-                </div>
 
-                <div class="post">
-                    <img class="thumbnail" src="images/ecom.jpg">
-                    <div class="post-preview">
-                        <h6 class ="post-title">Online Store - CoursePost Title</h6>
-                        <p class ="post-intro">Online store with paypal payments integration and guest user shopping</p>
-                        <a href="#">Read More</a>
-                    </div>
-                </div>
-                
-                <div class="post">
-                    <img class="thumbnail" src="images/membership site.jpg">
-                    <div class="post-preview">
-                        <h6 class ="post-title">Meberships Website</h6>
-                        <p class ="post-intro">Modulized guide for online courses with step by step instructions</p>
-                        <a href="#">Read More</a>
+                    <div class="social-links">
+                        <img id="social_image" src="images/follow.jpg">
+                        <h3>Find me on Twitter and Youtube</h3>
                     </div>
                 </div>
             </div>
+    </section>
+
+    <section class="s1">
+            <div class="main-container">
+                <h3 style="text-align: center;">Some of my past projects</h3>
+                
+                <div class="post-wrapper">
+                    
+                    <div class="post">
+                        <img class="thumbnail" src="images/starbuck-preview.png">
+                        <div class="post-preview">
+                            <h6 class ="post-title">Starbucks christmas website</h6>
+                            <p class ="post-intro">This project is a responsive, single-page recreation of a Starbucks promotional website, built entirely with HTML, CSS, and vanilla JavaScript. 
+                            It demonstrates modern front-end development techniques to create a clean, visually appealing, and mobile-friendly user experience.</p>
+                            <div class="project-links">
+                                <a class="btn btn-primary" href="https://github.com/loganghy/starbucks-website" target="_blank">View Github</a>
+                                <a class="btn btn-secondary" href="https://loganghy.github.io/starbucks-website/" target="_blank">View website</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="post">
+                        <img class="thumbnail" src="images/bootstrap.png">
+                        <div class="post-preview">
+                            <h6 class ="post-title">Frontend Bootcamp</h6>
+                            <p class ="post-intro">This project is a hands-on crash course designed to learn and practice the fundamentals of the Bootstrap 5 framework. 
+                            It covers essential components, the grid system, and utility classes to build modern, responsive web pages.</p>
+                            <div class="project-links">
+                                <a class="btn btn-primary" href="https://github.com/loganghy/bootstrap-crash-course-" target="_blank">View Github</a>
+                                <a class="btn btn-secondary" href="https://loganghy.github.io/bootstrap-crash-course-/" target="_blank">View website</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="post">
+                        <img class="thumbnail" src="images/music-player.png">
+                        <div class="post-preview">
+                            <h6 class ="post-title">Music Player</h6>
+                            <p class ="post-intro">This is a stylish, web-based music player built with HTML, CSS, and vanilla JavaScript.
+                            It provides a clean and intuitive interface for playing a predefined playlist of songs.</p>
+                            <div class="project-links">
+                                <a class="btn btn-primary" href="https://github.com/loganghy/music-player" target="_blank">View Github</a>
+                                <a class="btn btn-secondary" href="https://loganghy.github.io/music-player/" target="_blank">View website</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <section class="s2" id="contact-form">
+        <div class="main-container">
+            <h3 style="text-align: center;">Get in touch</h3>
+
+            <form class="contact-form">
+                <label>Name</label>
+                <input class="input-field" type="text" id="name" name="name" required>
+
+                <label>Email</label>
+                <input class="input-field" type="email" id="email" name="email" required>
+
+                <label>Subject</label>
+                <input class="input-field" type="text" id="subject" name="subject" required>
+
+                <label>Message</label>
+                <textarea class="input-field" id="message" name="message" rows="5" required></textarea>
+
+
+                <input id="submit-btn" type="submit" value="Send">
+            </form>
         </div>
- </section>
+    </section>
 
- <section class="s2">
-    <div class="main-container">
-        <h3 style="text-align: center;">Get in touch</h3>
+    <section class="S3">
+        <div class="main-container">
+            <footer class="footer">
+                <p>© 2025 Logan Firth. All rights reserved.</p>
+            </footer>
+        </div>          
+    </section>
 
-        <form id="contact-form">
-            <label>Name</label>
-            <input class="input-field" type="text" id="name" name="name" required>
-
-            <label>Email</label>
-            <input class="input-field" type="email" id="email" name="email" required>
-
-            <label>Subject</label>
-            <input class="input-field" type="text" id="subject" name="subject" required>
-
-            <label>Message</label>
-            <textarea class="input-field" id="message" name="message" rows="5" required></textarea>
-
-
-            <input id="submit-btn" type="submit" value="Send">
-        </form>
-    </div>
- </section>
-
-<section class="S3">
-    <div class="main-container">
-        <footer>
-            <p>© 2025 Logan Firth. All rights reserved.</p>
-        </footer>
-    </div>          
-</section>
-
-
-<script type="text/javascript" src="script.js"></script>
+    <!-- My JS -->
+    <script type="text/javascript" src="script.js"></script>
 </body>
 
 </html>
