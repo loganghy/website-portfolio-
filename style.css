@@ -310,6 +310,46 @@ h6 { font-size: 16px;}
     font-size: 14px;
 }
 
+#contact-form{
+    display: block;
+    max-width: 600px;
+    margin: 0 auto;
+    border: 1px solid var(--bordercolor);
+    padding: 15px;
+    border-radius: 5px;
+    background-color: var(--maincolor);
+    margin-bottom: 50px;
+}
+
+#contact-form label{
+    line-height: 2.7em;    
+}
+
+#contact-form textarea{
+    font-size: 14px;
+    min-height: 100px;
+}
+
+.input-field{
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: var(--secondarycolor);
+    font-size: 14px;
+    border: 1px solid var(--bordercolor);
+    border-radius: 5px;
+}
+
+#submit-btn{
+    background-color: var(--buttonColor);
+    color: #fff;
+    border: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    width: 100%;    
+}
+
 #corner-br{
 	position: absolute;
 	bottom: -10px;
