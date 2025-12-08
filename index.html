@@ -12,7 +12,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
 
     <!-- My CSS -->
-    <link rel="stylesheet" href="style.css">
+    <!-- This should be the ONLY link for your main theme CSS, and it needs the ID and an initial href -->
+     <link id="theme-style" rel="stylesheet" href="blue.css"> 
+    <link rel="stylesheet" href="default.css"> 
+
 </head>
 
 <body>
@@ -40,10 +43,11 @@
                     <h5 style="text-align: center;line-height: 0%;">Personalise Theme</h5>
 
                     <div class="theme-options-wrapper">
-                        <div id="light-mode" class="theme-dot"></div>
-                        <div id="blue-mode" class="theme-dot"></div>
-                        <div id="green-mode" class="theme-dot"></div>
-                        <div id="purple-mode" class="theme-dot"></div>
+                        <!-- ADD data-mode attribute to each theme-dot div -->
+                        <div id="light-mode" data-mode="light" class="theme-dot"></div>
+                        <div id="blue-mode" data-mode="blue" class="theme-dot"></div>
+                        <div id="green-mode" data-mode="green" class="theme-dot"></div>
+                        <div id="purple-mode" data-mode="purple" class="theme-dot"></div>
                     </div>
 
                     <p id="settings-note">Theme settings will be saved for<br>your next visit</p>
