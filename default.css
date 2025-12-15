@@ -414,6 +414,11 @@ h6 {
 	width: 100%;
 }
 
+#submit-btn:disabled {
+	opacity: 0.6;
+	cursor: not-allowed;
+}
+
 #corner-br {
 	position: absolute;
 	bottom: -10px;
@@ -480,4 +485,19 @@ h6 {
 	padding: 15px 0;
 	margin-top: 30px;
 	border-top: 1px solid var(--bordercolor);
+}
+
+.error {
+	color: #dc3545;
+	font-size: 0.85rem;
+	display: block;
+	margin-bottom: 10px;
+}
+
+.hidden {
+	display: none;
+}
+
+.form-message {
+	text-align: center;
 }
