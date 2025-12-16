@@ -101,6 +101,8 @@ html {
 a {
 	color: #17a2b8;
 	text-decoration: none;
+	font-family: "Russo One", sans-serif;
+	letter-spacing: 1px;
 }
 
 h1 {
